@@ -10,7 +10,7 @@ const Proposta = () => {
 
   return (
     <>
-      <p>ID do produto: {id}</p>
+      <p>ID: {id}</p>
       {error && <p>Ocorreu um erro...</p>}
       {loading && <p>Carregando...</p>}
       {proposal && (
