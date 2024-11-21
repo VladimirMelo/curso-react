@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 
 // configurando router
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom'
 import Contato from './routes/Contato.jsx'
 // pagina de erro
 import ErrorPage from './routes/ErrorPage.jsx'
@@ -24,13 +24,13 @@ const router =  createBrowserRouter([
       {
         path: "proposta/:id",
         element: <Proposta />
+      },
+      {
+        path: "contato",
+        element: <Contato />,
       }
     ]
   },
-  {
-    path: "contato",
-    element: <Contato />,
-  }
 ])
 
 createRoot(document.getElementById('root')).render(
